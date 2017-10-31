@@ -27457,6 +27457,21 @@ body {
     -webkit-transform: translate3d(319px, 0px, 0px);
     -moz-transform: translate3d(319px, 0px, 0px);
 }
+#page1_1.gwd-pause-animation .gwd-gen-7holgwdanimation {
+    animation-play-state: paused !important;
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+}
+#page1_1.gwd-pause-animation .gwd-gen-ozx2gwdanimation {
+    animation-play-state: paused !important;
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+}
+#page1_1.gwd-pause-animation .gwd-gen-1h2ggwdanimation {
+    animation-play-state: paused !important;
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+}
 #page1.gwd-pause-animation .gwd-gen-tlmfgwdanimation {
     animation-play-state: paused !important;
     -webkit-animation-play-state: paused !important;
@@ -30135,7 +30150,7 @@ body {
     -webkit-animation-play-state: paused !important;
     -moz-animation-play-state: paused !important;
 }
-#page1_1.gwd-pause-animation .gwd-gen-7holgwdanimation {
+#page1_1.gwd-pause-animation .gwd-gen-8rvogwdanimation {
     animation-play-state: paused !important;
     -webkit-animation-play-state: paused !important;
     -moz-animation-play-state: paused !important;
@@ -31448,21 +31463,6 @@ body {
     animation-play-state: paused !important;
     -webkit-animation-play-state: paused !important;
     -moz-animation-play-state: paused !important;
-}
-.gwd-imagebutton-1qsi {
-    position: absolute;
-    width: 57px;
-    height: 56px;
-    transform-origin: 28.5px 28px 0px;
-    -webkit-transform-origin: 28.5px 28px 0px;
-    -moz-transform-origin: 28.5px 28px 0px;
-    left: 1010px;
-    top: 637px;
-}
-#page1_1.gwd-pause-animation .gwd-gen-1589gwdanimation {
-    animation-play-state: paused !important;
-    -webkit-animation-play-state: paused !important;
-    -moz-animation-play-state: paused !important;
 }</style><script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script><script data-source="gwd_webcomponents_min.js" data-version="5" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script>
   <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" src="gwdpage_min.js"></script><script data-source="gwdpagedeck_min.js" data-version="9" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script><script data-source="https://s0.2mdn.net/ads/studio/Enabler.js" data-exports-type="gwd-doubleclick" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
     <script data-source="gwddoubleclick_min.js" data-version="14" data-exports-type="gwd-doubleclick" src="gwddoubleclick_min.js"></script><script data-source="gwdimage_min.js" data-version="9" data-exports-type="gwd-image" src="gwdimage_min.js"></script><script data-source="gwdtaparea_min.js" data-version="4" data-exports-type="gwd-taparea" src="gwdtaparea_min.js"></script>
@@ -31598,9 +31598,21 @@ body {
             // GWD Predefined Function
             gwd.actions.timeline.gotoAndPause(' onOffButtonGroup', 'off');
           };
-          gwd.auto_Gwd_imagebutton_1Imagebuttonloaded = function(event) {
+          gwd.auto_ToggleON_OFF_dishwasherAction = function(event) {
             // GWD Predefined Function
-            gwd.actions.gwdImagebutton.toggleEnable('gwd-imagebutton_1');
+            gwd.actions.timeline.gotoAndPlay('page1_1', 'dishwasher');
+          };
+          gwd.auto_ToggleON_OFF_stove_ovenAction = function(event) {
+            // GWD Predefined Function
+            gwd.actions.timeline.gotoAndPlay('page1_1', 'oven');
+          };
+          gwd.auto_ToggleON_OFF_refrigeratorAction = function(event) {
+            // GWD Predefined Function
+            gwd.actions.timeline.gotoAndPlay('page1_1', 'refrigerator');
+          };
+          gwd.auto_ToggleON_OFF_washer_dryerAction = function(event) {
+            // GWD Predefined Function
+            gwd.actions.timeline.gotoAndPlay('page1_1', 'laundry');
           };
         </script>
         <script type="text/javascript" gwd-events="registration">
@@ -31639,7 +31651,10 @@ body {
             gwd.actions.events.addHandler(' onOffButtonGroup gwd-taparea_6', 'action', gwd.auto__OnOffButtonGroup_Gwd_taparea_6Action, false);
             gwd.actions.events.addHandler(' onOffButtonGroup', 'event-18', gwd.auto__OnOffButtonGroupEvent_18, false);
             gwd.actions.events.addHandler(' onOffButtonGroup', 'event-18', gwd.auto__OnOffButtonGroupEvent_181, false);
-            gwd.actions.events.addHandler('gwd-imagebutton_1', 'imagebuttonloaded', gwd.auto_Gwd_imagebutton_1Imagebuttonloaded, false);
+            gwd.actions.events.addHandler('toggleON-OFF_dishwasher', 'action', gwd.auto_ToggleON_OFF_dishwasherAction, false);
+            gwd.actions.events.addHandler('toggleON-OFF_stove-oven', 'action', gwd.auto_ToggleON_OFF_stove_ovenAction, false);
+            gwd.actions.events.addHandler('toggleON-OFF_refrigerator', 'action', gwd.auto_ToggleON_OFF_refrigeratorAction, false);
+            gwd.actions.events.addHandler('toggleON-OFF_washer-dryer', 'action', gwd.auto_ToggleON_OFF_washer_dryerAction, false);
             gwd.actions.timeline.captureAnimationEnd(document.body);
           };
           gwd.actions.events.deregisterEventHandlers = function(event) {
@@ -31675,14 +31690,16 @@ body {
             gwd.actions.events.removeHandler(' onOffButtonGroup gwd-taparea_6', 'action', gwd.auto__OnOffButtonGroup_Gwd_taparea_6Action, false);
             gwd.actions.events.removeHandler(' onOffButtonGroup', 'event-18', gwd.auto__OnOffButtonGroupEvent_18, false);
             gwd.actions.events.removeHandler(' onOffButtonGroup', 'event-18', gwd.auto__OnOffButtonGroupEvent_181, false);
-            gwd.actions.events.removeHandler('gwd-imagebutton_1', 'imagebuttonloaded', gwd.auto_Gwd_imagebutton_1Imagebuttonloaded, false);
+            gwd.actions.events.removeHandler('toggleON-OFF_dishwasher', 'action', gwd.auto_ToggleON_OFF_dishwasherAction, false);
+            gwd.actions.events.removeHandler('toggleON-OFF_stove-oven', 'action', gwd.auto_ToggleON_OFF_stove_ovenAction, false);
+            gwd.actions.events.removeHandler('toggleON-OFF_refrigerator', 'action', gwd.auto_ToggleON_OFF_refrigeratorAction, false);
+            gwd.actions.events.removeHandler('toggleON-OFF_washer-dryer', 'action', gwd.auto_ToggleON_OFF_washer_dryerAction, false);
             gwd.actions.timeline.releaseAnimationEnd(document.body);
           };
           document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
           document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
         </script><script data-source="gwdoval_min.js" data-version="3" data-exports-type="gwd-oval" src="gwdoval_min.js"></script><script data-source="gwdbezierpath_min.js" data-version="3" data-exports-type="gwd-bezierpath" src="gwdbezierpath_min.js"></script>
         <script data-source="gwdrectangle_min.js" data-version="3" data-exports-type="gwd-rectangle" src="gwdrectangle_min.js"></script>
-          <script data-source="gwdimagebutton_min.js" data-version="9" data-exports-type="gwd-imagebutton" src="gwdimagebutton_min.js"></script>
 </head>
 
 <body>
@@ -31901,7 +31918,6 @@ body {
       <div class="gwd-animation-event event-18-animation" data-event-name="event-18" data-event-time="1000"></div>
       <gwd_animation_label_element data-label-name="off" data-label-time="0" data-label-animation-class-name="off"></gwd_animation_label_element>
     </div>
-          <gwd-imagebutton id="gwd-imagebutton_1" up-image="Smart_House-OffButton-11.svg" over-image="" down-image="Smart_House-OnButton-11.svg" scaling="cover" class="gwd-imagebutton-1qsi"></gwd-imagebutton>
         </div>
       </div>
     </div>
@@ -31947,4 +31963,4 @@ body {
 
 <script data-exports-type="dclk-quick-preview">studio.Enabler.setRushSimulatedLocalEvents(true);</script><script data-exports-type="gwd-studio-registration">function StudioExports() {
 Enabler.setFloatingPixelDimensions(0,0);
-}</script><script type="text/gwd-admetadata">{"version":1,"type":"DoubleClick","format":"","template":"Interstitial 3.0.0","politeload":false,"fullscreen":false,"counters":[],"timers":[],"exits":[],"creativeProperties":{"minWidth":0,"minHeight":0,"maxWidth":0,"maxHeight":0},"components":["gwd-bezierpath","gwd-doubleclick","gwd-image","gwd-imagebutton","gwd-oval","gwd-page","gwd-pagedeck","gwd-rectangle","gwd-taparea"],"responsive":true}</script></body></html>
+}</script><script type="text/gwd-admetadata">{"version":1,"type":"DoubleClick","format":"","template":"Interstitial 3.0.0","politeload":false,"fullscreen":false,"counters":[],"timers":[],"exits":[],"creativeProperties":{"minWidth":0,"minHeight":0,"maxWidth":0,"maxHeight":0},"components":["gwd-bezierpath","gwd-doubleclick","gwd-image","gwd-oval","gwd-page","gwd-pagedeck","gwd-rectangle","gwd-taparea"],"responsive":true}</script></body></html>
