@@ -10260,6 +10260,22 @@
             // GWD Predefined Function
             gwd.actions.timeline.gotoAndPause(' onOffButtonGroup', 'off');
           };
+          gwd.auto_ToggleON_OFF_dishwasherAction = function(event) {
+            // GWD Predefined Function
+            gwd.actions.timeline.gotoAndPlay('page1_1', 'dishwasher');
+          };
+          gwd.auto_ToggleON_OFF_stove_ovenAction = function(event) {
+            // GWD Predefined Function
+            gwd.actions.timeline.gotoAndPlay('page1_1', 'oven');
+          };
+          gwd.auto_ToggleON_OFF_refrigeratorAction = function(event) {
+            // GWD Predefined Function
+            gwd.actions.timeline.gotoAndPlay('page1_1', 'refrigerator');
+          };
+          gwd.auto_ToggleON_OFF_washer_dryerAction = function(event) {
+            // GWD Predefined Function
+            gwd.actions.timeline.gotoAndPlay('page1_1', 'laundry');
+          };
         </script>
         <script type="text/javascript" gwd-events="registration">
           // Support code for event handling in Google Web Designer
@@ -10297,6 +10313,10 @@
             gwd.actions.events.addHandler(' onOffButtonGroup gwd-taparea_6', 'action', gwd.auto__OnOffButtonGroup_Gwd_taparea_6Action, false);
             gwd.actions.events.addHandler(' onOffButtonGroup', 'event-18', gwd.auto__OnOffButtonGroupEvent_18, false);
             gwd.actions.events.addHandler(' onOffButtonGroup', 'event-18', gwd.auto__OnOffButtonGroupEvent_181, false);
+            gwd.actions.events.addHandler('toggleON-OFF_dishwasher', 'action', gwd.auto_ToggleON_OFF_dishwasherAction, false);
+            gwd.actions.events.addHandler('toggleON-OFF_stove-oven', 'action', gwd.auto_ToggleON_OFF_stove_ovenAction, false);
+            gwd.actions.events.addHandler('toggleON-OFF_refrigerator', 'action', gwd.auto_ToggleON_OFF_refrigeratorAction, false);
+            gwd.actions.events.addHandler('toggleON-OFF_washer-dryer', 'action', gwd.auto_ToggleON_OFF_washer_dryerAction, false);
             gwd.actions.timeline.captureAnimationEnd(document.body);
           };
           gwd.actions.events.deregisterEventHandlers = function(event) {
@@ -10332,6 +10352,10 @@
             gwd.actions.events.removeHandler(' onOffButtonGroup gwd-taparea_6', 'action', gwd.auto__OnOffButtonGroup_Gwd_taparea_6Action, false);
             gwd.actions.events.removeHandler(' onOffButtonGroup', 'event-18', gwd.auto__OnOffButtonGroupEvent_18, false);
             gwd.actions.events.removeHandler(' onOffButtonGroup', 'event-18', gwd.auto__OnOffButtonGroupEvent_181, false);
+            gwd.actions.events.removeHandler('toggleON-OFF_dishwasher', 'action', gwd.auto_ToggleON_OFF_dishwasherAction, false);
+            gwd.actions.events.removeHandler('toggleON-OFF_stove-oven', 'action', gwd.auto_ToggleON_OFF_stove_ovenAction, false);
+            gwd.actions.events.removeHandler('toggleON-OFF_refrigerator', 'action', gwd.auto_ToggleON_OFF_refrigeratorAction, false);
+            gwd.actions.events.removeHandler('toggleON-OFF_washer-dryer', 'action', gwd.auto_ToggleON_OFF_washer_dryerAction, false);
             gwd.actions.timeline.releaseAnimationEnd(document.body);
           };
           document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -10534,7 +10558,7 @@
           <div class="gwd-div-xmhb gwd-gen-11xogwdanimation" data-gwd-group="onOffButtonGroup" id="toggleON-OFF_dishwasher" data-gwd-tl-locked=""></div>
           <div class="gwd-div-xmhb gwd-gen-1dnigwdanimation gwd-div-1loo" data-gwd-group="onOffButtonGroup" id="toggleON-OFF_stove-oven" data-gwd-tl-locked=""></div>
           <div class="gwd-div-xmhb gwd-div-1loo gwd-gen-i0c8gwdanimation gwd-div-1wm8" data-gwd-group="onOffButtonGroup" id="toggleON-OFF_refrigerator" data-gwd-tl-locked=""></div>
-          <div class="gwd-div-xmhb gwd-div-1loo gwd-div-1wm8 gwd-gen-wtrhgwdanimation gwd-div-1161" data-gwd-group="onOffButtonGroup" id="toggleON-OFF_washer-dryer" data-gwd-tl-locked=""></div>
+          <div class="gwd-div-xmhb gwd-div-1loo gwd-div-1wm8 gwd-gen-wtrhgwdanimation gwd-div-1161" data-gwd-group="onOffButtonGroup" id="toggleON-OFF_washer-dryer"></div>
         </div>
       </div>
     </div>
