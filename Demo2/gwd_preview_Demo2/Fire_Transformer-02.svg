@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="138px" height="186px" viewBox="0 0 138 186" enable-background="new 0 0 138 186" xml:space="preserve">
+<g>
+	<defs>
+		<ellipse id="SVGID_3_" cx="70.512" cy="85.5" rx="81.166" ry="93.5"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#B42A25" d="M73.012,181.999c-14,1-50.5-8.5-62.5-50s29-79,29-79s-4.5,13.5-6,25
+		s1,19.5,1,19.5s-0.5-16,9.5-31s15-24,19-34.5s3.5-25,3.5-25s22,26,30.5,52s7.5,43.5,7.5,43.5s5-12,5-18s-3-13-3-13
+		s32.5,28.5,20.5,66.5S87.012,180.999,73.012,181.999z"/>
+	<path clip-path="url(#SVGID_2_)" fill="#F05B22" d="M71.513,181.999c-18.5,1.5-43-18-51.5-41.5s7.5-55.5,7.5-55.5s0.5,9.5,3,14.5
+		s8,9,8,9s-1.5-14.5,4.5-24s18.5-16.5,22.5-25s3-21,3-21s18,13,24.5,33s5.501,41.998,5.501,41.998s8.499-5.498,11.499-12.998
+		s1.5-15,1.5-15s17.5,21.5,5.5,55.5S90.013,180.499,71.513,181.999z"/>
+	<path clip-path="url(#SVGID_2_)" fill="#F9A21B" d="M73.013,182.499c-18.5,0-37-10-42.5-30s4.5-40.5,4.5-40.5s8,18,13.5,15
+		s0-23.5,8-39.5s16-18.5,16-18.5s-4.5,7.5,9.5,25s28,38.5,25,55S91.513,182.499,73.013,182.499z"/>
+	<path clip-path="url(#SVGID_2_)" fill="#F8DE8C" d="M73.513,182.5c-13.5,0-26-9-28-23s5.5-22.5,5.5-22.5s1,9,4,12s6.5,3,6.5,3
+		s-10-19.5-5.5-36s12-22,12-22s-2.5,14,3.5,20.5s23.5,21.5,25,37S87.013,182.5,73.513,182.5z"/>
+</g>
+</svg>
